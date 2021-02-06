@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>dotnet-HoratioBot-0F89651D-2716-473F-993C-73108BD9FE11</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AWSSDK.ApiGatewayManagementApi" Version="3.5.0.65" />
+        <PackageReference Include="AWSSDK.Athena" Version="3.5.0.61" />
+        <PackageReference Include="AWSSDK.CloudWatch" Version="3.5.0.62" />
+        <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.5.1.17" />
+        <PackageReference Include="AWSSDK.Comprehend" Version="3.5.3.17" />
+        <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.5.4.18" />
+        <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.101" />
+        <PackageReference Include="AWSSDK.KinesisFirehose" Version="3.5.0.59" />
+        <PackageReference Include="AWSSDK.SecretsManager" Version="3.5.0.59" />
+        <PackageReference Include="AWSSDK.ServiceDiscovery" Version="3.5.1.37" />
+        <PackageReference Include="AWSSDK.SQS" Version="3.5.1.10" />
+        <PackageReference Include="Discord.Net" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+        <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+        <PackageReference Include="System.Runtime.Caching" Version="5.0.0" />
+        <PackageReference Include="TwitchLib" Version="3.1.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Services\ReportQuery.sql" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Storage\ReportQuery.sql" />
+    </ItemGroup>
+</Project>

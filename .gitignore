@@ -1,0 +1,10 @@
+node_modules/
+/**/node_modules
+/**/bin
+/**/obj
+/**/*.dll
+/**/*.pdb
+/.idea
+/**/dist
+/**/build
+/**/cdk.out

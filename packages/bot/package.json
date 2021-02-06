@@ -1,0 +1,10 @@
+{
+  "name": "@95horatio.johndavis.dev/bot",
+  "version": "1.1.12",
+  "author": "John Davis <john@johndavis.dev>",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "build": "./build.sh"
+  }
+}
